@@ -2,13 +2,17 @@ import * as React from "react"
 import axios from "axios"
 
 import Footer from '../components/footer'
-import { titleDiv, mainElement, headerDiv } from './index.module.css'
+import { mainElement, titleDiv } from './shared.module.css'
+import { headerDiv, emailInputDiv, emailInput,
+    emailSubmitButton, activityListDiv, pushpinSpan, emailSubmitHeaderDiv,
+    submitMessageDiv, checkMarkSpan
+} from './index.module.css'
 
 class IndexPage extends React.Component {
     state = {
         email: "",
         isSubmittingEmail: false,
-        emailSubmitAttempt: false,
+        emailSubmitAttempt: true,
         emailSubmitSuccess: false
     }
 
@@ -42,15 +46,23 @@ class IndexPage extends React.Component {
     render() {
         let emailSubmitMsgDiv = <div></div>;
         if (this.state.emailSubmitAttempt) {
-            if (this.state.emailSubmitSuccess) {
+            if (this.state.isSubmittingEmail) {
                 emailSubmitMsgDiv = (
-                    <div>
+                    <div className={submitMessageDiv}>
+                        Submitting your email...
+                    </div>
+                )
+            } else if (this.state.emailSubmitSuccess) {
+                emailSubmitMsgDiv = (
+                    <div className={submitMessageDiv}>
+                        <span role="img" aria-label="check-mark" className={checkMarkSpan}>✔️</span> 
                         Your email has been submitted successfully.
                     </div>
                 )
             } else {
                 emailSubmitMsgDiv = (
-                    <div>
+                    <div className={submitMessageDiv}>
+                        <span role="img" aria-label="cross-mark" className={checkMarkSpan}>❌</span>
                         Sorry, there is an error. Please try submitting again.
                     </div>
                 )
@@ -61,33 +73,35 @@ class IndexPage extends React.Component {
                 <title>PageNow</title>
                 <div className={titleDiv}>PageNow</div>
                 <div className={headerDiv}>
-                    Chrome extension that promotes natural and contextual social interaction.
+                    Chrome extension for natural and contextual social interaction.
                 </div>
-                <div>
-                    You can ...
-                </div>
-                <div>
+                <div className={activityListDiv}>
                     <div>
-                        share the page you are reading
+                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span> 
+                        Share what page you are reading.
                     </div>
                     <div>
-                        see what your friends are reading
+                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span>
+                        See what your friends are reading.
                     </div>
                     <div>
-                        chat with curated random users on the same page at the moment.
+                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span>
+                        Talk to curated users on the same page.
                     </div>
                 </div>
-                <div>
-                    Enter your email to receive notification when PageNow launches in <strong>summer 2021</strong>. 
+                <div className={emailSubmitHeaderDiv}>
+                    Enter your email to receive notification when PageNow launches in <strong>SUMMER 2021</strong> <span role="img" aria-label="sun"></span>☀️ 
                 </div>
-                <div>
+                <div className={emailInputDiv}>
                     <input type="email" value={this.state.email}
                         disabled={this.state.isSubmittingEmail}
                         onChange={this.handleEmailInputChange}
+                        className={emailInput}
                     />
                     <button onClick={this.handleEmailSubmit}
+                        className={emailSubmitButton}
                         disabled={this.state.isSubmittingEmail}>
-                        Submit
+                        <strong>Submit</strong>
                     </button>
                 </div>
                 { emailSubmitMsgDiv }

@@ -1,4 +1,29 @@
 .footer-div {
     width: 100%;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 45px;
+    font-size: 17px;
+}
+
+.linkElement {
+    text-decoration: none;
+    color: #6F8FAF;
+}
+
+.linkElement:hover {
+    cursor: pointer;
+    color: #0047AB;
+}
+
+.dotSpan {
+    color: orange;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-div {
+        padding-bottom: 35px;
+        font-size: 15px;
+    }
 }
