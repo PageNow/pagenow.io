@@ -16,7 +16,8 @@ module.exports = {
             resolve: `gatsby-plugin-s3`,
             options: {
                 bucketName: "pagenow.io",
-                acl: null
+                acl: null,
+                generateRoutingRules: false
             },
         },
         // {

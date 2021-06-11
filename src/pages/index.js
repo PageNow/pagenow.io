@@ -6,7 +6,7 @@ import { mainElement, titleDiv } from './shared.module.css'
 import { headerDiv, emailInputDiv, emailInput, activityDiv,
     emailSubmitButton, activityListDiv, pushpinSpan, emailSubmitHeaderDiv,
     submitProcessMessageDiv, checkMarkSpan, submitSuccessMessageDiv,
-    submitErrorMessageDiv
+    submitErrorMessageDiv, summerEmphasisSpan, headerEmphasisSpan
 } from './index.module.css'
 
 class IndexPage extends React.Component {
@@ -77,7 +77,8 @@ class IndexPage extends React.Component {
                 <title>PageNow</title>
                 <div className={titleDiv}>PageNow</div>
                 <div className={headerDiv}>
-                    Chrome extension for natural and contextual social interaction.
+                    Chrome extension for <span className={headerEmphasisSpan}>natural </span> 
+                     and <span className={headerEmphasisSpan}>contextual</span> social interaction.
                 </div>
                 <div className={activityListDiv}>
                     <div className={activityDiv}>
@@ -94,13 +95,14 @@ class IndexPage extends React.Component {
                     </div>
                 </div>
                 <div className={emailSubmitHeaderDiv}>
-                    Enter your email to be notified when PageNow launches in <strong>SUMMER 2021</strong> <span role="img" aria-label="sun"></span>☀️ 
+                    Enter your email to be notified when PageNow launches in <span className={summerEmphasisSpan}>SUMMER 2021</span> <span role="img" aria-label="sun"></span>☀️ 
                 </div>
                 <div className={emailInputDiv}>
                     <input type="email" value={this.state.email}
                         disabled={this.state.isSubmittingEmail}
                         onChange={this.handleEmailInputChange}
                         className={emailInput}
+                        placeholder="Enter your email"
                     />
                     <button onClick={this.handleEmailSubmit}
                         className={emailSubmitButton}

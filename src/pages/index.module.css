@@ -7,7 +7,7 @@
 }
 
 .activity-list-div {
-    padding: 17px 0 30px 0;
+    padding: 25px 0 30px 0;
     width: 360px;
     margin: auto;
     text-align: left;
@@ -110,6 +110,17 @@ button:disabled {
     font-size: 15px;
 }
 
+.summer-emphasis-span {
+    color: #ff5700;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.header-emphasis-span {
+    color: #0047AB;
+    font-weight: 700;
+}
+
 @media only screen and (min-width: 491px) and (max-width: 700px) {
     .header-div {
         width: 480px;
@@ -132,15 +143,19 @@ button:disabled {
     }
 
     .email-input-div {
-        width: 300px;
+        width: 310px;
         margin: auto;
         font-size: 13px;
     }
 
+    .email-input {
+        font-size: 14px;
+    }
+
     .activity-list-div {
         width: 310px;
-        font-size: 14.5px;
-        padding: 10px 0 30px 0;
+        font-size: 13.5px;
+        padding: 20px 0 25px 0;
     }
 
     .activity-div {
@@ -157,5 +172,9 @@ button:disabled {
 
     .check-mark-span {
         font-size: 13px;
+    }
+
+    .summer-emphasis-span {
+        font-size: 16px;
     }
 }
