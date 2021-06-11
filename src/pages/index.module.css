@@ -1,7 +1,9 @@
 .header-div {
-    font-size: 25px;
+    font-size: 21px;
     width: 700px;
     margin: auto;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
 .activity-list-div {
@@ -9,7 +11,9 @@
     width: 360px;
     margin: auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
 .activity-div {
@@ -23,9 +27,11 @@
 
 .email-submit-header-div {
     width: 480px;
-    font-size: 20px;
+    font-size: 16px;
     margin: auto;
     line-height: 30px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
 .email-input-div {
@@ -94,7 +100,9 @@ button:disabled {
 
 .submit-success-message-div, .submit-error-message-div, .submit-process-message-div {
     padding-top: 5px;
-    font-size: 19px;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
 }
 
 .check-mark-span {
@@ -110,32 +118,28 @@ button:disabled {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 490px) {
-    .title-div {
-        padding-top: 150px;
-    }
-
     .header-div {
-        width: 300px;
+        width: 310px;
         margin: auto;
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .email-submit-header-div {
-        width: 300px;
+        width: 310px;
         margin: auto;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 25px;
     }
 
     .email-input-div {
         width: 300px;
         margin: auto;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .activity-list-div {
-        width: 300px;
-        font-size: 17px;
+        width: 310px;
+        font-size: 14.5px;
         padding: 10px 0 30px 0;
     }
 
@@ -148,7 +152,7 @@ button:disabled {
     }
 
     .submit-success-message-div, .submit-process-message-div, .submit-error-message-div {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .check-mark-span {

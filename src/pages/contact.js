@@ -10,7 +10,7 @@ const ContactPage = (props) => {
             <title>PageNow Contact</title>
             <div className={titleDiv}>PageNow Contact</div>
             <div className={contentDiv}>
-                Email us at <span className={emailSpan}>support@pagenow.io</span> for any thoughts or questions.
+                Email us at <span className={emailSpan}>support@pagenow.io</span> for any thoughts and questions.
             </div>
             <Footer pagePath="contact" />
         </main>
