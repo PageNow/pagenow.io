@@ -116,6 +116,10 @@ button:disabled {
     font-weight: 700;
 }
 
+.sunEmojiSpan {
+    font-size: 20px;
+}
+
 .header-emphasis-span {
     color: #0047AB;
     font-weight: 700;
@@ -159,7 +163,7 @@ button:disabled {
     }
 
     .activity-div {
-        padding-bottom: 4px;
+        padding-bottom: 7px;
     }
 
     button {
@@ -176,5 +180,9 @@ button:disabled {
 
     .summer-emphasis-span {
         font-size: 16px;
+    }
+
+    .sunEmojiSpan {
+        font-size: 17px;
     }
 }

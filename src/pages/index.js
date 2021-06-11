@@ -3,7 +3,7 @@ import axios from "axios"
 
 import Footer from '../components/footer'
 import { mainElement, titleDiv } from './shared.module.css'
-import { headerDiv, emailInputDiv, emailInput, activityDiv,
+import { headerDiv, emailInputDiv, emailInput, activityDiv, sunEmojiSpan,
     emailSubmitButton, activityListDiv, pushpinSpan, emailSubmitHeaderDiv,
     submitProcessMessageDiv, checkMarkSpan, submitSuccessMessageDiv,
     submitErrorMessageDiv, summerEmphasisSpan, headerEmphasisSpan
@@ -95,7 +95,7 @@ class IndexPage extends React.Component {
                     </div>
                 </div>
                 <div className={emailSubmitHeaderDiv}>
-                    Enter your email to be notified when PageNow launches in <span className={summerEmphasisSpan}>SUMMER 2021</span> <span role="img" aria-label="sun"></span>☀️ 
+                    Enter your email to be notified when PageNow launches in <span className={summerEmphasisSpan}>SUMMER 2021</span> <span role="img" aria-label="sun" className={sunEmojiSpan}>☀️</span> 
                 </div>
                 <div className={emailInputDiv}>
                     <input type="email" value={this.state.email}
