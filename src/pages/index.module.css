@@ -1,26 +1,31 @@
 .header-div {
-    font-size: 20px;
-    width: 600px;
+    font-size: 25px;
+    width: 700px;
     margin: auto;
 }
 
 .activity-list-div {
-    padding: 15px 0 20px 0;
-    width: 300px;
+    padding: 17px 0 30px 0;
+    width: 360px;
     margin: auto;
     text-align: left;
-    font-size: 17px;
+    font-size: 20px;
+}
+
+.activity-div {
+    padding-bottom: 8px;
 }
 
 .pushpin-span {
-    margin-right: 5px;
+    margin-right: 8px;
     font-size: 17px;
 }
 
 .email-submit-header-div {
-    width: 600px;
+    width: 480px;
     font-size: 20px;
     margin: auto;
+    line-height: 30px;
 }
 
 .email-input-div {
@@ -60,10 +65,11 @@ input:focus {
 }
 
 button {
-    background-color: black;
+    background-color: #413f3d;
     color: white;
     outline: none;
     border: none;
+    font-size: 15px;
 }
 
 button:hover {
@@ -74,17 +80,36 @@ button:disabled {
     background-color: gray;
 }
 
-.submit-message-div {
+.submit-success-message-div {
+    color: #0047AB;
+}
+
+.submit-error-message-div {
+    color: #b6666f;
+}
+
+.submit-process-message-div {
+    color: #697184;
+}
+
+.submit-success-message-div, .submit-error-message-div, .submit-process-message-div {
     padding-top: 5px;
+    font-size: 19px;
 }
 
 .check-mark-span {
     margin-right: 5px;
-    color: green;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 491px) and (max-width: 700px) {
+    .header-div {
+        width: 480px;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 490px) {
     .title-div {
         padding-top: 150px;
     }
@@ -92,95 +117,41 @@ button:disabled {
     .header-div {
         width: 300px;
         margin: auto;
+        font-size: 21px;
     }
 
     .email-submit-header-div {
-        width: 310px;
+        width: 300px;
         margin: auto;
         font-size: 17px;
+        line-height: 25px;
     }
 
     .email-input-div {
-        width: 310px;
+        width: 300px;
         margin: auto;
+        font-size: 15px;
+    }
+
+    .activity-list-div {
+        width: 300px;
+        font-size: 17px;
+        padding: 10px 0 30px 0;
+    }
+
+    .activity-div {
+        padding-bottom: 4px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .submit-success-message-div, .submit-process-message-div, .submit-error-message-div {
+        font-size: 17px;
+    }
+
+    .check-mark-span {
+        font-size: 13px;
     }
 }
-
-/* 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-} */

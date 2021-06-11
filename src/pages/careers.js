@@ -17,7 +17,7 @@ const CareersPage = (props) => {
             <div className={contentDiv}>
                 Meanwhile, send us your resume to <span className={emailSpan}>support@pagenow.io</span> to be considered and notified when positions open.
             </div>
-            <Footer />
+            <Footer pagePath="careers"/>
         </main>
     )
 }

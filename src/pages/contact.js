@@ -1,14 +1,20 @@
 import * as React from 'react'
 import Footer from '../components/footer'
 
-const CareersPage = (props) => {
+import { mainElement, titleDiv, emailSpan,
+    contentDiv } from './shared.module.css'
+
+const ContactPage = (props) => {
     return (
-        <main>
+        <main className={mainElement}>
             <title>PageNow Contact</title>
-            Contact Page!
-            <Footer />
+            <div className={titleDiv}>PageNow Contact</div>
+            <div className={contentDiv}>
+                Email us at <span className={emailSpan}>support@pagenow.io</span> for any thoughts or questions.
+            </div>
+            <Footer pagePath="contact" />
         </main>
     )
 }
 
-export default CareersPage
+export default ContactPage

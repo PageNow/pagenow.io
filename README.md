@@ -19,3 +19,5 @@ In the root S3 bucket (pagenow.io), delete ```Redirection Rules``` in ```Edit st
 ## References
 
 * https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/deploying-to-s3-cloudfront/
+
+* https://graphicmama.com/blog/website-color-schemes/ (Color scheme inspired by the first one)
