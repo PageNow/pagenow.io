@@ -1,9 +1,30 @@
+.logo-img {
+    max-width: 270px;
+    width: auto;
+    height: auto;
+}
+
+.icon-img {
+    max-width: 18px;
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
 .header-div {
     font-size: 21px;
     width: 700px;
     margin: auto;
     font-family: 'Merriweather', serif;
     font-weight: 400;
+}
+
+.activity-item-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .activity-list-div {
@@ -18,11 +39,6 @@
 
 .activity-div {
     padding-bottom: 8px;
-}
-
-.pushpin-span {
-    margin-right: 8px;
-    font-size: 17px;
 }
 
 .email-submit-header-div {

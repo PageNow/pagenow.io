@@ -3,11 +3,13 @@ import axios from "axios"
 
 import Footer from '../components/footer'
 import { mainElement, titleDiv } from './shared.module.css'
-import { headerDiv, emailInputDiv, emailInput, activityDiv, sunEmojiSpan,
+import { headerDiv, emailInputDiv, emailInput, activityDiv,
     emailSubmitButton, activityListDiv, pushpinSpan, emailSubmitHeaderDiv,
     submitProcessMessageDiv, checkMarkSpan, submitSuccessMessageDiv,
-    submitErrorMessageDiv, summerEmphasisSpan, headerEmphasisSpan
+    submitErrorMessageDiv, headerEmphasisSpan, logoImg, iconImg, activityItemDiv
 } from './index.module.css'
+import PageNowLogo from '../assets/PageNow_logo.png';
+import PageNowIcon from '../assets/PageNow_icon.png';
 
 class IndexPage extends React.Component {
     state = {
@@ -75,27 +77,29 @@ class IndexPage extends React.Component {
         return (
             <main className={mainElement}>
                 <title>PageNow</title>
-                <div className={titleDiv}>PageNow</div>
+                <div className={titleDiv}>
+                    <img src={PageNowLogo} className={logoImg} />
+                </div>
                 <div className={headerDiv}>
                     Chrome extension for <span className={headerEmphasisSpan}>natural </span> 
                      and <span className={headerEmphasisSpan}>contextual</span> social interaction.
                 </div>
                 <div className={activityListDiv}>
-                    <div className={activityDiv}>
-                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span> 
-                        Share what page you are reading.
+                    <div className={activityItemDiv + ' ' + activityDiv}>
+                    <img src={PageNowIcon} className={iconImg} />
+                        <span>Share what page you are reading.</span>
                     </div>
-                    <div className={activityDiv}>
-                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span>
-                        See what your friends are reading.
+                    <div className={activityItemDiv + ' ' + activityDiv}>
+                    <img src={PageNowIcon} className={iconImg} />
+                        <span>See what your friends are reading.</span>
                     </div>
-                    <div>
-                        <span role="img" aria-label="pushpin" className={pushpinSpan}>📌</span>
-                        Talk to curated users on the same page.
+                    <div className={activityItemDiv}>
+                        <img src={PageNowIcon} className={iconImg} />
+                        <span>Start contextual conversations.</span>
                     </div>
                 </div>
                 <div className={emailSubmitHeaderDiv}>
-                    Enter your email to be notified when PageNow launches in <span className={summerEmphasisSpan}>SUMMER 2021</span> <span role="img" aria-label="sun" className={sunEmojiSpan}>☀️</span> 
+                    Enter your email to be notified when PageNow launches! 
                 </div>
                 <div className={emailInputDiv}>
                     <input type="email" value={this.state.email}
