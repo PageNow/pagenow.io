@@ -7,8 +7,14 @@
 
 html, body, #___gatsby, #gatsby-focus-wrapper {
     height: 100%;
+    width: 100%;
+    background-color: #f2f1ef;
 }
 
 body {
     margin: 0px;
 }
+
+/* .carousel-control-next-icon {
+    background-color: #878787;
+} */

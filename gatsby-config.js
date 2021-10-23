@@ -20,11 +20,11 @@ module.exports = {
                 generateRoutingRules: false
             },
         },
-        // {
-        //   resolve: "gatsby-plugin-manifest",
-        //   options: {
-        //     icon: "src/images/icon.png",
-        //   },
-        // },
+        {
+          resolve: "gatsby-plugin-manifest",
+          options: {
+            icon: "src/assets/PageNow_icon.png",
+          },
+        },
     ],
 };

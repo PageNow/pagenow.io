@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Footer from '../components/footer'
+import Header from '../components/header/header'
 
 import { mainElement, titleDiv, emailSpan, faceEmojiSpan,
     contentDiv } from './shared.module.css'
@@ -7,6 +7,7 @@ import { mainElement, titleDiv, emailSpan, faceEmojiSpan,
 const CareersPage = (props) => {
     return (
         <main className={mainElement}>
+            <Header pagePath="careers"/>
             <title>PageNow Careers</title>
             <div className={titleDiv}>PageNow Careers</div>
             <div className={contentDiv}>
@@ -17,7 +18,6 @@ const CareersPage = (props) => {
             <div className={contentDiv}>
                 Meanwhile, send us your resume to <span className={emailSpan}>support@pagenow.io</span> to be considered and notified when positions open.
             </div>
-            <Footer pagePath="careers"/>
         </main>
     )
 }

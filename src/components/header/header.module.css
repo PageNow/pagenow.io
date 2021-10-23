@@ -1,9 +1,9 @@
-.footer-div {
+.header-div {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 0;
-    padding-bottom: 45px;
+    top: 0;
+    padding-top: 15px;
     font-size: 17px;
 }
 
@@ -23,11 +23,12 @@
 
 .dotSpan {
     color: orange;
+    padding: 0 5px 0 5px;
 }
 
 @media only screen and (max-width: 480px) {
     .footer-div {
-        padding-bottom: 35px;
+        padding-top: 35px;
         font-size: 16px;
     }
 

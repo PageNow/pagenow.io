@@ -1,0 +1,45 @@
+.carousel-div {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.carousel-elem {
+    width: 650px;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.carousel-img {
+    height: 400px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 491px) and (max-width: 649px) {
+    .carousel-elem {
+        width: 430px;
+        height: 270px;
+        /* max-height: 400px !important; */
+        text-align: center;
+        margin: auto;
+    }
+    
+    .carousel-img {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .carousel-elem {
+        width: 310px;
+        height: 200px;
+        /* max-height: 400px !important; */
+        text-align: center;
+        margin: auto;
+    }
+    
+    .carousel-img {
+        height: 200px;
+    }
+}

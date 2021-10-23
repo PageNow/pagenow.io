@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import { footerDiv, linkElement, currentLinkElement, dotSpan } from './footer.module.css'
+import { headerDiv, linkElement, currentLinkElement, dotSpan } from './header.module.css'
 
-const Footer = (props) => {
+const Header = (props) => {
     const homeLinkElement = props.pagePath === 'home' ? currentLinkElement : ''
     const careersLinkElement = props.pagePath === 'careers' ? currentLinkElement : ''
     const contactLinkElement = props.pagePath === 'contact' ? currentLinkElement : ''
     return (
-        <div className={footerDiv}>
+        <div className={headerDiv}>
             <span>
                 <Link to="/" className={`${linkElement} ${homeLinkElement}`}>
                     Home
@@ -34,4 +34,4 @@ const Footer = (props) => {
     )
 }
 
-export default Footer
+export default Header
