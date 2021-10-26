@@ -2,7 +2,6 @@ import * as React from "react"
 import axios from "axios"
 import Carousel from 'react-bootstrap/Carousel';
 
-
 import Header from '../components/header/header'
 import { mainElement, titleDiv } from './shared.module.css'
 import { headerDiv, emailInputDiv, emailInput, activityDiv,
@@ -127,7 +126,6 @@ class IndexPage extends React.Component {
                         </Carousel.Item>
                     </Carousel>
                 </div>
-                
 
                 <div className={activityListDiv}>
                     <div className={activityItemDiv + ' ' + activityDiv}>

@@ -17,7 +17,7 @@
 }
 
 .email-span {
-    color: #0047AB;
+    color: #0074D9;
 }
 
 .content-div {
@@ -29,6 +29,33 @@
     line-height: 30px;
     font-family: 'Merriweather', serif;
     font-weight: 400;
+}
+
+.policy-content-div {
+    width: 850px;
+    font-size: 15px;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.policy-content-div h2 {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.policy-content-div p {
+    font-size: 16px;
+}
+
+.linkElement {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+.linkElement:hover {
+    cursor: pointer;
+    color: #003366;
 }
 
 .face-emoji-span {
