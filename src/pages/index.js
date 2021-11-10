@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import Header from '../components/header/header'
 import { mainElement, titleDiv } from './shared.module.css'
-import { headerDiv, emailInputDiv, emailInput, activityDiv,
+import { headerDiv, subheaderDiv, emailInputDiv, emailInput, activityDiv, storeLink,
     emailSubmitButton, activityListDiv, emailSubmitHeaderDiv,
     submitProcessMessageDiv, checkMarkSpan, submitSuccessMessageDiv,
     submitErrorMessageDiv, headerEmphasisSpan, logoImg, pushpinSpan, activityItemDiv
@@ -18,6 +18,8 @@ import SearchScreenshot from '../assets/search_screenshot.png';
 import NotificationScreenshot from '../assets/notification_screenshot.png';
 import ConversationsScreenshot from '../assets/conversations_screenshot.png';
 import PagesComponentScreenshot from '../assets/pages_component_screenshot.png';
+
+const chromeStoreUrl = "https://chrome.google.com/webstore/detail/pagenow/lplobiaakhgkjcldopgkbcibeilddbmc";
 
 class IndexPage extends React.Component {
     state = {
@@ -87,11 +89,18 @@ class IndexPage extends React.Component {
                 <Header pagePath="home" />
                 <title>PageNow</title>
                 <div className={titleDiv}>
-                    <img src={PageNowLogo} className={logoImg} alt="PageNow-Logo" />
+                    <a href={chromeStoreUrl} target="_blank" rel="noreferrer">
+                        <img src={PageNowLogo} className={logoImg} alt="PageNow-Logo" />
+                    </a>
                 </div>
                 <div className={headerDiv}>
                     Chrome extension for <span className={headerEmphasisSpan}>natural </span> 
                      and <span className={headerEmphasisSpan}>contextual</span> social interaction.
+                </div>
+                
+                <div className={subheaderDiv}>
+                    Available at 
+                    <a href={chromeStoreUrl} target="_blank" rel="noreferrer" className={storeLink}>Chrome Store</a>!
                 </div>
 
                 <div className={carouselDiv}>

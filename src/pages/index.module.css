@@ -23,7 +23,23 @@
     margin: auto;
     font-family: 'Merriweather', serif;
     font-weight: 400;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 15px 0;
+}
+
+.subheaderDiv {
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.storeLink {
+    text-decoration: none;
+    color: #0074D9;
+    margin-left: 3px;
+}
+
+.storeLink:hover {
+    cursor: pointer;
+    color: #003366;
 }
 
 .activity-item-div {
