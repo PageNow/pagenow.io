@@ -4,10 +4,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 import Header from '../components/header/header'
 import { mainElement, titleDiv } from './shared.module.css'
-import { headerDiv, subheaderDiv, emailInputDiv, emailInput, activityDiv, storeLink,
-    emailSubmitButton, activityListDiv, emailSubmitHeaderDiv,
-    submitProcessMessageDiv, checkMarkSpan, submitSuccessMessageDiv,
-    submitErrorMessageDiv, headerEmphasisSpan, logoImg, pushpinSpan, activityItemDiv
+import { headerDiv, chromeStoreHeaderDiv, activityDiv, storeLink,
+    activityListDiv, headerEmphasisSpan, logoImg, pushpinSpan,
+    activityItemDiv, githubLink, privacyHeaderDiv, githubHeaderDiv
 } from './index.module.css'
 import { carouselElem, carouselDiv, carouselImg } from './carousel.module.css'
 import PageNowLogo from '../assets/PageNow_logo.png';
@@ -20,6 +19,7 @@ import ConversationsScreenshot from '../assets/conversations_screenshot.png';
 import PagesComponentScreenshot from '../assets/pages_component_screenshot.png';
 
 const chromeStoreUrl = "https://chrome.google.com/webstore/detail/pagenow/lplobiaakhgkjcldopgkbcibeilddbmc";
+const githubUrl = "https://github.com/PageNow";
 
 class IndexPage extends React.Component {
     state = {
@@ -58,32 +58,6 @@ class IndexPage extends React.Component {
     }
 
     render() {
-        let emailSubmitMsgDiv = <div></div>;
-        if (this.state.isSubmittingEmail) {
-            emailSubmitMsgDiv = (
-                <div className={submitProcessMessageDiv}>
-                    Submitting your email...
-                </div>
-            )
-        } else if (this.state.emailSubmitAttempt) {
-            if (this.state.isSubmittingEmail) {
-                
-            } else if (this.state.emailSubmitSuccess) {
-                emailSubmitMsgDiv = (
-                    <div className={submitSuccessMessageDiv}>
-                        <span role="img" aria-label="check-mark" className={checkMarkSpan}>✔️</span> 
-                        Your email has been submitted successfully.
-                    </div>
-                )
-            } else {
-                emailSubmitMsgDiv = (
-                    <div className={submitErrorMessageDiv}>
-                        <span role="img" aria-label="cross-mark" className={checkMarkSpan}>❌</span>
-                        Sorry, there is an error. Please try again.
-                    </div>
-                )
-            }
-        }
         return (
             <main className={mainElement}>
                 <Header pagePath="home" />
@@ -98,9 +72,17 @@ class IndexPage extends React.Component {
                      and <span className={headerEmphasisSpan}>contextual</span> social interaction.
                 </div>
                 
-                <div className={subheaderDiv}>
+                <div className={chromeStoreHeaderDiv}>
                     Available at 
                     <a href={chromeStoreUrl} target="_blank" rel="noreferrer" className={storeLink}>Chrome Store</a>!
+                </div>
+
+                <div className={privacyHeaderDiv}>
+                    <strong>Privacy</strong> and <strong>security</strong> are the highest priority for PageNow. 
+                </div>
+
+                <div className={githubHeaderDiv}>
+                    The entire source code is available on <a href={githubUrl} target="_blank" rel="noreferrer" className={githubLink}>Github</a>.
                 </div>
 
                 <div className={carouselDiv}>
@@ -153,23 +135,6 @@ class IndexPage extends React.Component {
                         <span>Start contextual conversations.</span>
                     </div>
                 </div>
-                <div className={emailSubmitHeaderDiv}>
-                    Enter your email to be notified when PageNow launches! 
-                </div>
-                <div className={emailInputDiv}>
-                    <input type="email" value={this.state.email}
-                        disabled={this.state.isSubmittingEmail}
-                        onChange={this.handleEmailInputChange}
-                        className={emailInput}
-                        placeholder="Enter your email"
-                    />
-                    <button onClick={this.handleEmailSubmit}
-                        className={emailSubmitButton}
-                        disabled={this.state.isSubmittingEmail}>
-                        <strong>Submit</strong>
-                    </button>
-                </div>
-                { emailSubmitMsgDiv }
             </main>
         )
     } 

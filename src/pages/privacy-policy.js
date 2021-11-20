@@ -148,6 +148,29 @@ const PrivacyPolicyPage = (props) => {
                     If you think that your child provided this kind of information on our service, 
                     we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
                 </p>
+
+                <h2>Default Activity Sharing Settings</h2>
+                <p>
+                    Upon account creation, the list of domains on which users will 
+                    share their activities are as follows:
+                </p>
+                <p>
+                    academia.edu, aitrends.com, androidauthority.com, androidcentral.com, angular.io, apnews.com, artificial-intelligence.blog, artofproblemsolving.com, 
+                    arxiv.org, askubuntu.com', betterprogramming.pub, bloomberg.com, brunch.co.kr, businessinsider.com, buzzfeednews.com, caltech.edu, cbs.com, cbsnews.com, 
+                    cnbc.com, cnet.com, cnn.com, coursera.org, crunchbase.com, css-tricks.com, css-tricks.com, deeplearning.ai, dev.to, devdocs.io, devpost.com, diff.blog, 
+                    digitalocean.com, dzone.com, economist.com, edx.org, elsevier.com, engadget.com, entrepreneur.com, espn.com, fool.com, forbes.com, fortune.com, foxnews.com, 
+                    foxnews.com, freecodecamp.org, geeksforgeeks.org, github.com, github.io, gitlab.com, gizmodo.com, glassdoor.com, goodreads.com, hackernoon.com, hackerrank.com, 
+                    hbr.org, heroku.com, huffpost.com, inc.com, kaggle.com, kdnuggets.com, latimes.com, leetcode.com, leetcode.com, machinelearningmastery.com, mashable.com, 
+                    medium.com, mit.edu, mozilla.org, namu.wiki, nbcnews.com, nfl.com, nih.gov, noninertialframe.com, npr.org, nytimes.com, okky.kr, openai.com, pagenow.io, 
+                    paulgraham.com, plainenglish.io, pluralsight.com, politico.com, producthunt.com, python.org, pytorch.org, quora.com, redhat.com, research.google, researchgate.net, 
+                    reuters.com, science.gov, sciencedaily.com, scienceopen.com, scikit-learn.org, serverfault.com, serverless.com, slashdot.org, stackexchange.com, stackoverflow.com, 
+                    stackshare.io, techcrunch.com, techmeme.com, technologyreview.com, ted.com, tensorflow.org, testdriven.io, theverge.com, tistory.com, tmz.com, topcoder.com, 
+                    towardsdatascience.com, udacity.com, udemy.com, usnews.com, venturebeat.com, vox.com, w3schools.com, washingtonpost.com, wikipedia.org, wired.com, wsj.com, 
+                    xkcd.com, ycombinator.com
+                </p>
+                <p>
+                    Users can update the list of domains at any time.
+                </p>
             </div>
         </main>
     )

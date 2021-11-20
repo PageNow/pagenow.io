@@ -18,7 +18,7 @@
 }
 
 .header-div {
-    font-size: 22px;
+    font-size: 24px;
     width: 800px;
     margin: auto;
     font-family: 'Merriweather', serif;
@@ -26,9 +26,9 @@
     padding: 10px 0 15px 0;
 }
 
-.subheaderDiv {
-    font-size: 20px;
-    padding-bottom: 25px;
+.chromeStoreHeaderDiv {
+    font-size: 22px;
+    margin-bottom: 15px;
 }
 
 .storeLink {
@@ -38,6 +38,25 @@
 }
 
 .storeLink:hover {
+    cursor: pointer;
+    color: #003366;
+}
+
+.privacyHeaderDiv {
+    font-size: 18px;
+}
+
+.githubHeaderDiv {
+    font-size: 18px;
+}
+
+.githubLink {
+    text-decoration: none;
+    color: #0074D9;
+    margin-left: 2px;
+}
+
+.githubLink:hover {
     cursor: pointer;
     color: #003366;
 }

@@ -32,6 +32,10 @@ const Header = (props) => {
             <span><a href="https://www.noninertialframe.com" className={linkElement} target="_blank" rel="noreferrer">
                 Blog
             </a></span>
+            <span className={dotSpan}>•</span>
+            <span><a href="https://github.com/PageNow" className={linkElement} target="_blank" rel="noreferrer">
+                Github
+            </a></span>
             {/* <span className={dotSpan}>•</span>
             <span>
                 <Link to="/privacy-policy" className={`${linkElement} ${privacyPolicyLinkElement}`}>
